@@ -1,0 +1,13 @@
+
+public class Item {
+	
+	static public Item id;
+	
+	
+	public static Item createObject() {
+		if(id == null)
+			id = new Item();
+		return id;
+	}
+	
+}

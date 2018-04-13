@@ -1,0 +1,33 @@
+
+public class Vehicle {
+	
+	private int numberofwheels;
+	private String colour;
+	private int age;
+	
+	public int getNumberOfWheels() {
+		return numberofwheels;
+	}
+	
+	public String getColor() {
+		return colour;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public void setNumberOfWheels(int x) {
+		numberofwheels = x;
+	}
+	
+	public void setColour(String c) {
+		colour = c;
+	}
+	
+	public void setAge(int a) {
+		age = a;
+	}
+	
+
+}

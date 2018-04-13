@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+
+
+public class Garage {
+	
+	ArrayList<Vehicle> garage;
+	
+	public Garage() {
+		garage = new ArrayList<Vehicle>();
+	}
+	
+	
+	
+	public void addVehicle(Vehicle vehicle) {
+		garage.add(vehicle);
+	}
+	
+	public Vehicle getVehicle(int index) {
+		return garage.get(index);
+	}
+	
+	public void removeVehicle(String type) {
+		for(int i = 0; i < garage.size(); i++) {
+			
+			if(garage.get(i).getType().equals(type))
+			{
+				garage.remove(i);
+			}
+		}
+		
+	}
+	
+	public void removeVehicle(int ID) {
+		
+	}
+	
+	
+	public int calculateMotorcycleBill(Vehicle motorcycle) {
+		return motorcycle.getNumberOfWheels() * 100 * motorcycle.getAge() ;
+	}
+	
+	public int calculateCarBill(Vehicle car) {
+		return car.getNumberOfWheels() * 100 * car.getAge();
+	}
+	
+	public int calculateRocketBill(Vehicle rocket) {
+		return rocket.getAge() * 100000;
+	}
+	
+	
+	
+	
+}

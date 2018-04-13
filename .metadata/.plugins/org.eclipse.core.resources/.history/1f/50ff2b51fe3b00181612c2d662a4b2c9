@@ -1,0 +1,27 @@
+
+public class Motorcycle extends Vehicle {
+	
+	private boolean reallyLoud;
+	private boolean sidecar;
+	
+	public 
+	
+	public boolean getReallyLoud() {
+		return reallyLoud;
+	}
+	
+	public boolean getSideCar() {
+		return sidecar;
+	}
+	
+	public void setReallyLoud(boolean reallyloud) {
+		this.reallyLoud = reallyloud;
+	}
+	
+	public void setSideCar(boolean sidecar) {
+		this.sidecar = sidecar;
+	}
+	
+	
+
+}

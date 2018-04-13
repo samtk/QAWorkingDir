@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Garage {
+	
+	ArrayList<Vehicle> garage;
+	
+	public Garage() {
+		garage = new ArrayList<Vehicle>();
+	}
+	
+	
+	
+	public void addVehicle(Vehicle vehicle) {
+		garage.add(vehicle);
+	}
+	
+	public Vehicle getVehicle(int index) {
+		return garage.get(index);
+	}
+	
+	public void removeVehicle(String type) {
+		Iterator it = garage.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		
+		}
+		
+	}
+	
+	public void removevehicle(int ID) {
+		
+	}
+	
+	
+	public int calculateMotorcycleBill(Vehicle motorcycle) {
+		return motorcycle.getNumberOfWheels() * 100 * motorcycle.getAge() ;
+	}
+	
+	public int calculateCarBill(Vehicle car) {
+		return car.getNumberOfWheels() * 100 * car.getAge();
+	}
+	
+	public int calculateRocketBill(Vehicle rocket) {
+		return rocket.getAge() * 100000;
+	}
+	
+	
+	
+	
+}

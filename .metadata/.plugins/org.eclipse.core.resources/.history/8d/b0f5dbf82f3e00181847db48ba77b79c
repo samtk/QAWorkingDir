@@ -1,0 +1,9 @@
+
+public class NewsPaper extends Item{
+
+	public NewsPaper(String title, String type) {
+		super(title, type);
+		
+	}
+	
+}

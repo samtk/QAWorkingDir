@@ -1,0 +1,14 @@
+
+public abstract class Item {
+	
+	static public int id;
+	
+	/**
+	public static Item createObject() {
+		if(id == null)
+			id = new Item();
+		return id;
+	}*/
+	
+	
+}

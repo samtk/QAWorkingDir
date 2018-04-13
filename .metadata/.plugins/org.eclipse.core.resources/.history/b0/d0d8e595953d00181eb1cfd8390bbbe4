@@ -1,0 +1,7 @@
+
+public class Statistics {
+
+	int totalgamesplayed, computerwins, humanwins, ties;
+	
+	
+}

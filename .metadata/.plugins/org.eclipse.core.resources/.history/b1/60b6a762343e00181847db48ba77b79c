@@ -1,0 +1,12 @@
+
+public class NewsPaper extends Item{
+
+	private String datereleased;
+	private String newsagency;
+	
+	public NewsPaper(String datereleased, String newsagency) {
+		this.datereleased = datereleased;
+		this.newsagency = newsagency;
+	}
+	
+}

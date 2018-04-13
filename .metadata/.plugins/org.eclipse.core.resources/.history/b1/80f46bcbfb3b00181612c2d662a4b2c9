@@ -1,0 +1,9 @@
+
+public class Car extends Vehicle {
+
+	private String manufacturer;
+	private boolean airbags;
+	private boolean automatic;
+	
+	
+}

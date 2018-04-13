@@ -1,0 +1,37 @@
+
+public class Item {
+	
+	private static int id;
+	private static int nextid;
+	private String type; //type book, journal or Newspaper
+	private boolean checkedOut;
+	private String title;
+	
+	
+	static {
+		nextid = 1;
+	}
+	
+	public Item(String title, String type) {
+		id = nextid++;
+		this.title = title;
+		this.type = type;
+	}
+ 
+	
+	public void giveItemType(String type) {
+		
+	}
+	
+	public void changeCheckedOut(boolean check) {
+		checkedOut = check;
+	}
+	
+	public int getItemID() {
+		return id;
+	}
+	
+	
+	
+	
+}

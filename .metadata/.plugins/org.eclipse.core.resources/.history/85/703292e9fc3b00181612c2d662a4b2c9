@@ -1,0 +1,19 @@
+
+public class Car extends Vehicle {
+
+	private String manufacturer;
+	private boolean airbags;
+	private boolean automatic;
+	
+	public String getManufacturer() {
+		return manufacturer;
+	}
+	
+	public boolean getAirbags() {
+		return airbags;
+	}
+	
+	public boolean getAutomatic() {
+		return automatic;
+	}
+}

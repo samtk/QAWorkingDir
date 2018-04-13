@@ -1,0 +1,11 @@
+
+public class commandInterface {
+
+	public void startCommandinterface() {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+	}
+}

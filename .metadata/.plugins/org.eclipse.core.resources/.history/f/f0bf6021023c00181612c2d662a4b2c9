@@ -1,0 +1,37 @@
+
+public abstract class Vehicle {
+	
+	private int numberofwheels;
+	private String colour;
+	private int age;
+	
+	public Vehicle(int numberofwheels, String colour, int age) {
+		this.numberofwheels = numberofwheels;
+		this.colour = colour;
+		this.age = age;
+	}
+	
+	public abstract int getNumberOfWheels();
+	
+	public String getColor() {
+		return colour;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public void setNumberOfWheels(int x) {
+		numberofwheels = x;
+	}
+	
+	public void setColour(String c) {
+		colour = c;
+	}
+	
+	public void setAge(int a) {
+		age = a;
+	}
+	
+
+}

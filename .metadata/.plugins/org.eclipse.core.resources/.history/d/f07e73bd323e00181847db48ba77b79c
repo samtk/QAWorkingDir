@@ -1,0 +1,11 @@
+
+public class BookBuilder {
+
+	private String author;
+	private String publisher;
+	private String datepublished;
+	
+	public Book buildBook() {
+		return new Book();
+	}
+}

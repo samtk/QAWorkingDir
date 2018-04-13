@@ -1,0 +1,7 @@
+
+public class NewsPaper extends Item{
+
+	public void giveItemID(int id) {
+		
+	}
+}

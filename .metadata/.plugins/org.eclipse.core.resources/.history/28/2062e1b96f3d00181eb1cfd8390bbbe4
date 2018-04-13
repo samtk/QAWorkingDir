@@ -1,0 +1,71 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class TestRun {
+	
+	public static void main(String[] args) {
+		Person Bob = new Person("Bob", "Programmer", 22);
+		Person Batman = new Person("Batman", "Super Hero", 30);
+		Person Joker = new Person("Joker", "Super Vilain", 40);
+		Person Spiderman = new Person("Spiderman", "Web Slinger", 25);
+		Person DrOc = new Person("Dr Octopus", "Evil Scientist", 45);
+	
+		
+		ArrayList<Person> people = new ArrayList<Person>();
+		people.add(Bob);
+		people.add(Batman);
+		people.add(Joker);
+		people.add(Spiderman);
+		people.add(DrOc);
+		
+		String FILENAME = "C:\\Users\\Admin\\Desktop\\people.txt";
+		
+		writePeopleToFile(FILENAME,people);
+		
+		
+	}
+	
+	
+	
+	
+	
+	public static void writePeopleToFile(String filename, ArrayList<Person> people) {
+		try {
+			BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
+			
+			for(Person p : people) {
+				bw.write(p.toString());
+				bw.newLine();
+			}
+			bw.close();
+			System.out.println("Write success");
+		}
+		catch(IOException io) {
+			io.printStackTrace();
+		}
+	}
+	
+	
+	
+	public static void fileReader(String filename) {
+		String line = null;
+	    List<String> records = new ArrayList<String>();
+		try {
+			BufferedReader bufferedReader = new BufferedReader(new FileReader(filename));
+			
+		}
+		catch(IOException io) {
+			io.printStackTrace();
+		}
+		
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,31 @@
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Parameter p = new Parameter();
+		//p.itteration(5);
+		
+		int[] a = {1,2,3,4,5,6,7,8,9,10};
+		for(int i : a) {
+			System.out.println(p.parameter(i, 3, false));
+		}
+		
+		for(int i : a) {
+			System.out.println(i);
+		}
+		
+		int[] newa = new int[10];
+		for(int i = 0; i < 10; i++) {
+			newa[i] = i;
+			System.out.println(newa[i]);
+		}
+		for(int i = 0; i < 10; i++) {
+			newa[i] = newa[i]*10;
+		}
+		
+		
+
+	}
+
+}

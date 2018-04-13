@@ -1,0 +1,14 @@
+
+public class NewsPaper extends Item{
+
+	public void giveItemID(int id) {
+		
+	}
+
+	@Override
+	public void giveItemType(String type) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

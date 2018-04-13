@@ -1,0 +1,7 @@
+
+public class Journals extends Item {
+
+	public void giveItemID(int id) {
+		
+	}
+}

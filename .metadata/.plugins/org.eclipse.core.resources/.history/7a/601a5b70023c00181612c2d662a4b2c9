@@ -1,0 +1,19 @@
+
+public class Rocket extends Vehicle {
+	
+	private int numberofthrusters;
+	
+	public Rocket(int numberofthrusters, int numberofwheels, String colour,int age){
+		super(numberofwheels, colour, age);
+		this.numberofthrusters = numberofthrusters;
+	}
+	
+	public int getNumberofthrusters() {
+		return this.numberofthrusters;	
+	}
+	
+	public void setNumberofthrusters(int num) {
+		this.numberofthrusters = num;
+	}
+
+}

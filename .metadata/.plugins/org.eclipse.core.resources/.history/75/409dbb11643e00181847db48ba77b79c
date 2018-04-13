@@ -1,0 +1,27 @@
+
+public class Runner {
+
+	public static void main(String[] args) {
+		
+		Book b = new Book("b", "bob", "27/03/18");
+		qa.addItem(b);
+		//System.out.println(b.getItemID());
+		Book c = new Book("b","bob", "27/03/18");
+		qa.addItem(c);
+		//System.out.println(c.getItemID());
+		Book d = new Book("c", "cat", "27/03/18");
+		qa.addItem(d);
+		//System.out.println(d.getItemID());
+		
+		QALibrary qa = new QALibrary();
+		
+		
+		
+		
+		String filename = "C:\\Users\\Admin\\Desktop\\library.txt";
+		qa.writeToFile(filename);
+		
+
+	}
+
+}

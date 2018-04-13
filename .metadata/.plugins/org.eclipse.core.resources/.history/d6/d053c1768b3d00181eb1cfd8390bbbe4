@@ -1,0 +1,95 @@
+import java.util.Scanner;
+
+public class testRun {
+
+	static int totalgamesplayed, computerwins, humanwins, ties;
+	
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Type Rock, Paper or Scissors");
+		
+		
+		while(true) {
+			String input = sc.nextLine();
+			String ai = generateAiResponse();
+			String result = readInput(input, ai);
+			
+			if(result.equals("quit")) break;
+			
+			trackStatistics(result);
+			System.out.println("Computer Picks " + ai);
+			System.out.println("You "+result + "!");
+			System.out.println("Try Again?");
+			System.out.println();
+		}
+		
+		
+		sc.close();
+		
+
+	}
+	
+	public static String generateAiResponse() {
+		int num = (int) (Math.random() * 3); 
+		String response = "";
+		switch(num){
+			case(0): response = "Paper"; break;
+			case(1): response = "Scissors"; break;
+			case(2): response = "Rock"; break;
+		}
+		return response;
+	}
+	
+	
+	public static String readInput(String input, String ai) {
+		switch(input.toLowerCase()) {
+			case("paper"): 
+				if(ai.equals("Paper")) return "Draw";
+				if(ai.equals("Scissors")) return "Lose";
+				if(ai.equals("Rock")) return "Win";
+			case("scissors"): 
+				if(ai.equals("Paper")) return "Win";
+				if(ai.equals("Scissors")) return "Draw";
+				if(ai.equals("Rock")) return "Lose";
+			case("rock"):
+				if(ai.equals("Paper")) return "Lose";
+				if(ai.equals("Scissors")) return "Win";
+				if(ai.equals("Rock")) return "Draw";
+			case("quit"):
+				return "quit";
+			default:
+				return "Could not read command";
+			
+		}
+	}
+	
+	
+	
+	
+	public String compare(String x, String y) 
+	{
+		
+		return "";
+	}
+	
+	
+	public static void trackStatistics(String result) {
+		totalgamesplayed++;
+		switch(result) {
+			case("Win"):
+				humanwins++; break;
+			case("Draw"):
+				ties++; break;
+			case("Lose"):
+				computerwins++; break;
+		}
+		
+	}
+	
+	
+
+
+}

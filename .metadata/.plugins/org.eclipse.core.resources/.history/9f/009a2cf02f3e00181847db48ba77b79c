@@ -1,0 +1,25 @@
+
+public class Journals extends Item {
+
+	public void giveItemID(int id) {
+		
+	}
+
+	@Override
+	public void giveItemType(String type) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void changeCheckedOut(boolean check) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getItemID() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

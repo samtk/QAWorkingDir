@@ -1,0 +1,7 @@
+
+public class motorcycle extends Vehicle {
+	
+	private boolean reallyLoud;
+	private boolean sidecar;
+
+}

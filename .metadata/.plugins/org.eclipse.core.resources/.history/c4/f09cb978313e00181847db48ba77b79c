@@ -1,0 +1,54 @@
+import java.util.HashMap;
+
+public class QALibrary implements Library{
+	
+	private HashMap<Integer, Item> itemMap = new HashMap<Integer, Item>();
+	private HashMap<Integer, Person> customerMap = new HashMap<Integer, Person>();
+
+	@Override 
+	public void checkOut(Item book) {
+		itemMap.get(book.getItemID()).changeCheckedOut(true);
+	}
+
+	@Override
+	public void checkIn(Item book) {
+		itemMap.get(book.getItemID()).changeCheckedOut(false);
+		
+	}
+
+	@Override
+	public void addItem(Item book) {
+		itemMap.put(book.getItemID(), book);		
+	}
+
+	@Override
+	public void removeItem(Item book) {
+		itemMap.remove(book.getItemID());
+		
+	}
+
+	@Override
+	public void updateItem(int id, Item book) {
+		itemMap.put(id, book);
+		
+	}
+
+	@Override
+	public void registerPerson(Person name) {
+		customerMap.put(name.getID(), name);
+	}
+
+	@Override
+	public void deletePerson(Person name) {
+		customerMap.remove(name.getID()); 
+	}
+
+	@Override
+	public void updatePerson(int id, Person name) {
+		customerMap.put(id, name);
+		
+	}
+	
+	
+
+}

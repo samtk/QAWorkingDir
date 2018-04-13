@@ -1,0 +1,15 @@
+
+public class PeopleManager {
+
+	public static Person findPerson(Person[] people, String name) {
+		for(Person p : people) {
+			if(p.getName().equals(name)) {
+				return p;
+			}
+		}
+		return null;
+	}
+	
+	
+	
+}

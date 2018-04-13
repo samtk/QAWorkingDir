@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Runner {
+	
+	public static void main(String[] args) {
+		GameState gs = new GameState();
+		Scanner sc = new Scanner(System.in);
+		//String input = sc.nextLine();
+		
+		gs.startMessage();
+		//System.out.println("hi");
+		String input = sc.nextLine();
+		System.out.println(gs.readCommand(input));
+		System.out.println("You notice a small watch-like device in your left hand. It has hands like a watch, but the hands don't seem to tell time");
+		System.out.println("try 'north', 'south', 'east' or 'west'");
+		
+		while(true) {
+			input = sc.nextLine();
+			String response = gs.readCommand(input);
+			System.out.println(response);
+			if(gs.victory(response)) break;
+		}
+	}
+	
+
+}

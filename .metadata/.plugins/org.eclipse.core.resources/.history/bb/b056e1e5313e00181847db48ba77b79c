@@ -1,0 +1,8 @@
+
+public class BookBuilder {
+
+	private String author;
+	private String publisher;
+	private String datepublished;
+	
+}

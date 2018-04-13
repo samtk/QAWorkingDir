@@ -1,0 +1,22 @@
+
+public abstract class Item {
+	
+	private static int id;
+	private String type; //type book, journal or Newspaper
+	private boolean checkedOut;
+	
+	
+
+	
+	public abstract void giveItemID(int id); 
+	
+	public abstract void giveItemType(String type);
+	
+	public abstract void changeCheckedOut(boolean check);
+	
+	public abstract int getItemID();
+	
+	
+	
+	
+}

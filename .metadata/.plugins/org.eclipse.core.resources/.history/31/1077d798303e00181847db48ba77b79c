@@ -1,0 +1,10 @@
+
+public class Journals extends Item {
+
+	public Journals(String title, String type) {
+		super(title, type);
+		
+	}
+
+
+}

@@ -1,0 +1,22 @@
+		
+public interface Library {
+
+	
+	public void Item checkOut(Item book);
+	
+	public void checkIn(Item book);
+	
+	public void addItem(Item book);
+	
+	public void removeItem(Item book);
+	
+	public void updateItem(Item book);
+	
+	public void registerPerson(Person name);
+	
+	public void deletePerson(String name);
+	
+	public void updatePerson(String name);
+	
+}
+

@@ -1,0 +1,6 @@
+
+public class Item {
+	
+	static public int id;
+	
+}

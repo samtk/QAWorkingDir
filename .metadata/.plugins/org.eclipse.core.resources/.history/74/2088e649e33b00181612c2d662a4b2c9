@@ -1,0 +1,8 @@
+
+public class Parameter {
+	
+	public int parameter(int a, int b) {
+		return a + b;
+	}
+
+}

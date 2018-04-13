@@ -1,0 +1,11 @@
+
+public class Parameter {
+	
+	public int parameter(int a, int b, boolean bool) {
+		if((a == 0 && b != 0)) return b;
+		if (a == 0 && b != 0) return a;
+		if(bool) return a + b;
+		else return a * b;
+	}
+
+}

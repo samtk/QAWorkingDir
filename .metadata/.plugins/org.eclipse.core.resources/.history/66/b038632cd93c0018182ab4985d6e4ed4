@@ -1,0 +1,36 @@
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(cheapoArea());
+
+	}
+	
+	public int cheapoArea() {
+		return 20*10;
+	}
+	
+	public int joesArea() {
+		return 15*10;
+	}
+
+	public int duluxourousArea() {
+		return 10*20;
+	}
+	
+	public int numCheap(int area) {
+		int num = area/cheapoArea();
+		return num;
+	}
+	
+	public int numJoe(int area) {
+		return 0;
+	}
+	
+	public int numDulux(int area) {
+		return 0;
+	}
+
+}

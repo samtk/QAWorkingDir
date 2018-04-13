@@ -1,0 +1,15 @@
+
+public class Runner {
+
+	public static void main(String[] args) {
+		
+		Book b = new Book();
+		System.out.println(b.getItemID());
+		Book c = new Book();
+		System.out.println(c.getItemID());
+		Book d = new Book();
+		System.out.println(d.getItemID());
+
+	}
+
+}

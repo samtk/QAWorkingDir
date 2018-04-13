@@ -1,0 +1,56 @@
+import java.util.HashMap;
+
+public class QALibrary implements Library{
+	
+	HashMap<Integer, String> bookMap = new HashMap<Integer, String>();
+	HashMap<Integer, String> customerMap = new HashMap<Integer, String>();
+
+	@Override
+	public Item checkOut() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void checkIn(Item book) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addItem(Item book) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeItem(Item book) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateItem(Item book) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void registerPerson(Person name) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deletePerson(String name) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updatePerson(String name) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

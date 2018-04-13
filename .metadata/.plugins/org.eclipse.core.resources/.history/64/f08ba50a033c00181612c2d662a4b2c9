@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+
+public class Garage {
+	
+	ArrayList<Vehicle> garage;
+	
+	public Garage() {
+		garage = new ArrayList<Vehicle>();
+	}
+	
+	
+	
+	public void addVehicle(Vehicle vehicle) {
+		garage.add(vehicle);
+	}
+	
+	public Vehicle getVehicle(int index) {
+		return garage.get(index);
+	}
+	
+	public void removeVehicle(String type) {
+		
+	}
+	
+	public void removevehicle(int ID) {
+		
+	}
+	
+	
+	public int calculateMotorcycleBill() {
+		return 0;
+	}
+	
+	public int calculateCarBill() {
+		return 0;
+	}
+	
+	public int calculateRocketBill() {
+		return 0;
+	}
+	
+	
+	
+	
+}

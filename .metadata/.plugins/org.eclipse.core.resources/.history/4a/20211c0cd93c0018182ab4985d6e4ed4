@@ -1,0 +1,24 @@
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public int cheapoArea() {
+		double totalArea = (20*10);
+		return 0;
+	}
+	
+	public int joesArea() {
+		
+		return 0;
+	}
+
+	public int duluxourousArea() {
+		
+		return 0;
+	}
+
+}
